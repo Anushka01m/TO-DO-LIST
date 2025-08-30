@@ -16,4 +16,3 @@ def load_tasks():
 def save_tasks(tasks):
     with open(FILE, "w") as f:
         json.dump([t.to_dict() for t in tasks], f, indent=2)
-
